@@ -12,7 +12,7 @@ import reactor.core.publisher.Flux;
 public class CosmosSqlController {
     private final UserRepository userRepository;
 
-    @GetMapping
+    @GetMapping ("/users")
     Flux<User> getAllUsers(){
         return userRepository.findAll();
     }
